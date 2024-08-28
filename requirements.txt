@@ -1,5 +1,0 @@
-numpy
-pandas
-streamlit
-joblib
-tensorflow==2.11.0
