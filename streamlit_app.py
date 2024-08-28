@@ -1,8 +1,8 @@
 import numpy as np
 import pandas as pd
 import streamlit as st 
-import tensorflow as tf
 import joblib
+import tensorflow as tf
 model=tf.keras.models.load_model('sirtuin_model.h5')
 scaler=joblib.load('scaler.pkl')
 
