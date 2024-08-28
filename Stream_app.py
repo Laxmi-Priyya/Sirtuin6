@@ -36,7 +36,7 @@ if st.button("Predict"):
     predicted_class = model.predict(user_scaled)[0][0]
     
     # Display the prediction
-    if predicted_class < 0.5:
+    if predicted_class > 0.5:
         st.markdown("<h2 style='color: #28a745;'>Prediction: High BFE</h2>", unsafe_allow_html=True)
     else:
         st.markdown("<h2 style='color: #d9534f;'>Prediction : Low BFE </h2>", unsafe_allow_html=True)
