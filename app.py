@@ -1,10 +1,10 @@
 import numpy as np
 import pandas as pd
 import streamlit as st 
-import tensorflow as tf # Now you can import Streamlit
+import tensorflow as tf
 import joblib
-model=tf.keras.models.load_model('/content/path_to_your_saved_model.h5')
-scaler=joblib.load('/content/scaler.pkl')
+model=tf.keras.models.load_model('sirtuin_model.h5')
+scaler=joblib.load('scaler.pkl')
 
 st.title("Identification of High / Low BFE in Sirtuin")
 st.sidebar.header("Enter input features")
